@@ -149,7 +149,6 @@ body:not(.homepage) {
 }
 
 
-
 /****************
  * Publications *
  ****************/
@@ -213,73 +212,6 @@ body:not(.homepage) {
   }
 }
 
-/****************
- * Posts *
- ****************/
-
- .posts {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: stretch;
-  align-content: center;
-  overflow: hidden;
-  padding: 2em 0 2em 0;
-  margin-bottom: 0;
-  width: 100%;
-
-  article {
-    /* TODO flex column for insides */
-    display: inline-block;
-    width: 18em;
-    background: #fff;
-    text-align: center;
-    padding: 1em 1em 3em 1em;
-    margin: 0 2em 2em 0;
-    white-space: normal;
-    opacity: 1.0;
-    @include transition(opacity 0.75s ease-in-out);
-
-    h3 {
-      height: 77px;
-    }
-
-    p {
-      text-align: center;
-    }
-
-    .image {
-      margin-bottom: 3em;
-
-      img {
-        height: 10em;
-        width: auto;
-        margin: auto;
-
-        &.no-image {
-          visibility: hidden;
-
-          &::after {
-            content: 'No Image Provided';
-            display: block;
-            height: 10em;
-            line-height: 1em;
-            text-align: center;
-            width: 100%;
-            visibility: visible;
-            padding-top: 50%;
-            @include transform(translateY(-50%));
-          }
-        }
-      }
-    }
-  }
-}
-
-
-
-
-
 
 /****************
  *  Max-Widths  *
@@ -294,17 +226,7 @@ body:not(.homepage) {
       margin: 0 1.25em 1.25em 0;
     }
   }
-
-  .posts {
-    padding: 1.5em 0 1.5em 0;
-
-    article {
-      width: 18em;
-      margin: 0 1.25em 1.25em 0;
-    }
-  }
 }
-
 
 @media screen and (max-width: 840px) {
   #header {
@@ -312,15 +234,6 @@ body:not(.homepage) {
   }
 
   .publications  {
-    padding: 1.25em 0 1.25em 0;
-
-    article {
-      width: 18em;
-      margin: 0 1em 1em 0;
-    }
-  }
-
-  .posts  {
     padding: 1.25em 0 1.25em 0;
 
     article {
@@ -350,7 +263,7 @@ body:not(.homepage) {
       }
 
       .image {
-        margin-bottom: 5em;
+        margin-bottom: 2em;
 
         img {
           max-width: 100%;
@@ -358,33 +271,7 @@ body:not(.homepage) {
       }
     }
   }
- 
-  .posts {
-    padding: 0.5em 0 0.5em 0;
-
-    article {
-      width: calc(50% - 1em);
-      padding-bottom: 2em;
-      margin: 0 0.5em 0.5em 0;
-
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-
-      .image {
-        margin-bottom: 5em;
-
-        img {
-          max-width: 100%;
-        }
-      }
-    }
-  } 
 }
-
-
-
-
 
 @media screen and (max-width: 528px) {
   body {
@@ -547,26 +434,6 @@ body:not(.homepage) {
   }
 
   .publications article {
-    margin-right: 0;
-    width: 100%;
-
-    header {
-      margin-top: 1em;
-      margin-bottom: 0;
-    }
-
-    .image {
-      display: none;
-
-      img.no-image {
-        height: auto;
-        margin-top: -5em;
-        margin-bottom: -5em;
-      }
-    }
-  }
-
-  .posts article {
     margin-right: 0;
     width: 100%;
 
