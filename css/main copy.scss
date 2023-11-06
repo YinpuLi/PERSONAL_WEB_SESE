@@ -108,11 +108,6 @@ body:not(.homepage) {
   .inner {
     opacity: 1;
   }
-
-  & + aside {
-    margin: 2.5em auto 1em;
-    text-align: center;
-  }
 }
 
 #nav > ul > li {
@@ -128,26 +123,6 @@ body:not(.homepage) {
     margin-right: -7px;
     text-align: center;
     vertical-align: top;
-  }
-
-  .icon.img {
-    height: 2em;
-    width: 2em;
-
-    img {
-      height: 1em;
-      width: 1em;
-
-      &.google-scholar {
-        filter: invert(1);
-        margin-left: -7px;
-      }
-
-      &:hover {
-        // TODO exact color match
-        filter: invert(50%) sepia(100%) hue-rotate(320deg) saturate(185%);
-      }
-    }
   }
 }
 
@@ -239,23 +214,12 @@ body:not(.homepage) {
 
 
 /****************
- *   Calendar   *
- ****************/
-
-.calendar.iframe {
-  background: $white;
-  height: 600px;
-  width: 100%;
-  padding: 20px;
-}
-
-/****************
  *  Max-Widths  *
  ****************/
 
 @media screen and (max-width: 1680px) {
   .publications {
-    padding: 1.5em 0 1.5em 1.25em;
+    padding: 1.5em 0 1.5em 0;
 
     article {
       width: 18em;
