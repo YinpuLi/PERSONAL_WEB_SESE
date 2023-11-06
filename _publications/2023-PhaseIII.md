@@ -1,7 +1,7 @@
 ---
 authors: "Bradley Hupf, Li, Yinpu, Rachael Liu, and Jianchang Lin"
 displayDate: "2023"
-date: Nov-2023
+date: Nov-26-2023
 short_title: "BART Assiting in Phase III Predition"
 title: "Predicting Phase III Results by Incorporating Historical Data using BART Extensions"
 blurb: "Chapman and Hall/CRC Taylor & Francis Group, LLC"
