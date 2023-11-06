@@ -192,7 +192,7 @@ body:not(.homepage) {
   article {
     /* TODO flex column for insides */
     display: inline-block;
-    width: 5em;
+    width: 18em;
     background: #fff;
     text-align: center;
     padding: 1em 1em 3em 1em;
@@ -213,7 +213,7 @@ body:not(.homepage) {
       margin-bottom: 3em;
 
       img {
-        height: 5em;
+        height: 10em;
         width: auto;
         margin: auto;
 
