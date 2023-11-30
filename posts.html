@@ -4,11 +4,11 @@ title: Posts
 ---
 
 <div class="publications">
-  <h>posts</h>
-  <!-- {% assign posts = (site.posts) %}
+  <h1>Posts</h1>
+  {% assign publications = (site.posts | sort: 'date') | reverse %}
 
-  {% for post in posts %}
-    {% include post.html post=post %}
-  {% endfor %} -->
+  {% for publication in publications %}
+    {% include post.html publication=publication %}
+  {% endfor %}
 
 </div>

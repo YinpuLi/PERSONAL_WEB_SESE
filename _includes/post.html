@@ -1,32 +1,32 @@
 <article>
-  <a class="image featured" {% if post.source %}href="{{ post.source }}"{% endif %}>
-    {% if post.image %}
-    <img src="{{ post.image.url | default: '' }}"
-         alt="{{ post.image.alt | default: '' }}" />
+  <a class="image featured" {% if publication.source %}href="{{ publication.source }}"{% endif %}>
+    {% if publication.image %}
+    <img src="{{ publication.image.url | default: '' }}"
+         alt="{{ publication.image.alt | default: '' }}" />
     {% else %}
       <img class="no-image" alt="No image provided" />
     {% endif %}
   </a>
 
   <header>
-    {% if post.source %}
-    <a href="{{ post.source }}">
+    {% if publication.source %}
+    <a href="{{ publication.source }}">
     {% endif %}
       <h3>
-        {{ post.short_title }}
-        <span class="timestamp">{{ post.displayDate }}</span>
+        {{ publication.short_title }}
+        <span class="timestamp">{{ publication.displayDate }}</span>
       </h3>
-    {% if post.source %}
+    {% if publication.source %}
     </a>
     {% endif %}
   </header>
 
   <p>
-    {{ post.authors }}. {{ post.blurb }}
+    {{ publication.authors }}. {{ publication.blurb }}
   </p>
 
   <p>
-  {% for link in post.links %}
+  {% for link in publication.links %}
     <a href="{{ link.url }}">{{ link.text }}</a>
   {% endfor %}
   </p>
