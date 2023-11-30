@@ -1,14 +1,14 @@
 <article>
-  <a class="image featured" {% if post.source %}href="{{ post.source }}"{% endif %}>
+  <!-- <a class="image featured" {% if post.source %}href="{{ post.source }}"{% endif %}>
     {% if post.image %}
     <img src="{{ post.image.url | default: '' }}"
          alt="{{ post.image.alt | default: '' }}" />
     {% else %}
       <img class="no-image" alt="No image provided" />
     {% endif %}
-  </a>
-
-  <header>
+  </a> -->
+  
+  <!-- <header>
     {% if post.source %}
     <a href="{{ post.source }}">
     {% endif %}
@@ -19,15 +19,15 @@
     {% if post.source %}
     </a>
     {% endif %}
-  </header>
+  </header> -->
 
   <p>
-    {{ post.authors }}. {{ post.blurb }}
+    {{ post.content }}
   </p>
 
-  <p>
+  <!-- <p>
   {% for link in post.links %}
     <a href="{{ link.url }}">{{ link.text }}</a>
   {% endfor %}
-  </p>
+  </p> -->
 </article>
