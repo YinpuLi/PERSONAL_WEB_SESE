@@ -15,5 +15,7 @@ baseurl: ""
 permalink: pretty
 collections:
   posts:
+    output: false
   publications:
+    output: false
 
