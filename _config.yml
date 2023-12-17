@@ -13,9 +13,9 @@ email: yinpuli@icloud.com
 baseurl: ""
 # url: "http://localhost:4000"
 permalink: pretty
+future: true
 collections:
-  posts:
-    output: false
   publications:
     output: false
-
+  posts:
+    output: false
